@@ -5,7 +5,7 @@
 import Cataphyl
 
 extension LTDocument {
-    func embed() async throws {
+    public func embed() async throws {
         let lite: Lite = dataStore.configuration.lite
         
         try await ingest()
